@@ -1,0 +1,27 @@
+#Packages tikz and pgfplots (LaTeX).
+
+\begin{figure}[h]
+\begin{center}
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[
+    xlabel={Education expenditure},
+    ylabel={Quality of education},
+    xmin=0, xmax=4,
+    ymin=0, ymax=2,
+    axis lines=middle,
+    enlargelimits=false,
+    samples=100,
+    legend pos=north west,
+    xtick=\empty, ytick=\empty  % Remove numbers and ticks on both axes
+]
+\addplot[red,thick,domain=0:3.5] {x^(0.4)} node[anchor=south west] {};
+\addplot[blue!30,domain=0:0.5] {1.2*x+0.29} node[anchor=south west] {};
+\addplot[blue!40,domain=1:2] {0.3*x+0.734} node[anchor=south west] {};
+\addplot[blue!50,domain=2.5:3.5] {0.20*x+0.96} node[anchor=south west] {};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+    \caption{Efficiency frontier of education expenditure.}
+    \label{fig:geral}
+\end{figure}
