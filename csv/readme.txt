@@ -1,0 +1,7 @@
+The file "edgdp.csv" (https://rbi.org.in/Scripts/PublicationsView.aspx?id=22291) was extracted from "Statement 26: Expenditure on Education - As Ratio to Aggregate Expenditure," specifically the row for All States and UTs (Percent to GDP).
+
+The file "stutvar.csv" was obtained from Statement 26 by calculating the percentage variation in the share of education expenditure relative to total expenditure for the years mentioned for each state/UT.
+
+The file "pisatidy.csv" was obtained directly from an article published in The Indian Express (https://indianexpress.com/article/explained/back-to-pisa-after-2009-poor-show-how-does-it-assess-15-year-olds-5349458/) as there are only a few data points. The extraction involved creating vectors with the information, transforming them into a dataset, and converting it to a tidy format. The same data could also be obtained through the learningtower package for R or directly on the OECD website.
+
+The file "socialspendingshare.csv" (https://rbi.org.in/Scripts/PublicationsView.aspx?id=22259) was obtained from Appendix Table 7: Composition of Social Sector Expenditure. I considered education expenditures as (1ia+2ia+3a). Unfortunately, education data is combined with "sports, art, and culture," and the procedure to calculate education spending in the report itself does not separate these expenditures because they are provided this way in official documents.
